@@ -6,11 +6,17 @@ This project is a web-based system designed to manage student records. It allows
 
 Features:
 Developed a comprehensive system for managing student records with features for viewing, updating, and deleting profiles, leveraging Java Servlets for backend functionality and PostgreSQL for secure data storage.
+
 Student Login: Secure login system with authentication to ensure privacy.
+
 Profile Management: Students can view, update, and delete their profiles.
+
 CRUD Operations: Full Create, Read, Update, and Delete functionality for managing student records.
+
 Interactive Dashboard: A user-friendly interface for managing student data.
+
 Database Integration: Uses PostgreSQL to store and manage student information securely.
+
 Technologies Used:
 Frontend: HTML, CSS, JavaScript, JSP
 Backend: Java Servlets
