@@ -18,8 +18,12 @@ Interactive Dashboard: A user-friendly interface for managing student data.
 Database Integration: Uses PostgreSQL to store and manage student information securely.
 
 Technologies Used:
-Frontend: HTML, CSS, JavaScript, JSP
-Backend: Java Servlets
-Database: PostgreSQL
-Server: Apache Tomcat
-Version Control: Git
+-Frontend: HTML, CSS, JavaScript, JSP
+
+-Backend: Java Servlets
+
+-Database: PostgreSQL
+
+-Server: Apache Tomcat
+
+-Version Control: Git
