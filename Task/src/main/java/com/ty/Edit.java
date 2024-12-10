@@ -17,18 +17,9 @@ public class Edit extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
-
+				
 		String phoneNo = request.getParameter("phone_no");
-
-
-
 		request.setAttribute("phone_no", phoneNo);
-
-
-		
-		
-
 		request.getRequestDispatcher("/edit.html").forward(request, response);
 	}
 
