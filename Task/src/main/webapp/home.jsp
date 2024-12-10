@@ -155,7 +155,7 @@
 
         // Logout Function with Notification
         function logout(event) {
-            event.preventDefault(); // Prevents default link behavior 
+            event.preventDefault(); 
             const notification = document.getElementById('notification');
             notification.style.display = 'block';
             setTimeout(() => {
