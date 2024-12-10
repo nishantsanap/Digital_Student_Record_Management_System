@@ -44,8 +44,6 @@ public class Details extends HttpServlet {
             }
             request.getRequestDispatcher("/Details.jsp").forward(request, response);
 
-
-
             rs.close();
             stmt.close();
             conn.close();
