@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
     <style>
-        /* General Reset */
+    
         * {
             margin: 0;
             padding: 0;
@@ -13,7 +13,7 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Background Image with Overlay */
+        // Background Image  
         body {
             display: flex;
             justify-content: center;
@@ -25,7 +25,7 @@
             text-align: center;
         }
 
-        /* Dark Overlay */
+        
         body::before {
             content: "";
             position: absolute;
@@ -37,7 +37,7 @@
             z-index: 1;
         }
 
-        /* Centered Form Container */
+        
         .form-container {
             position: relative;
             z-index: 2;
@@ -50,7 +50,7 @@
             animation: fadeInUp 1s ease-out;
         }
 
-        /* Fade-in Animation for the Form */
+        //Animation for the Form 
         @keyframes fadeInUp {
             0% {
                 opacity: 0;
@@ -62,14 +62,14 @@
             }
         }
 
-        /* Form Heading */
+        
         h2 {
             font-size: 2em;
             margin-bottom: 20px;
             color: #333;
         }
 
-        /* Label Styling */
+
         label {
             font-size: 1em;
             color: black;
@@ -78,7 +78,7 @@
             text-align: left;
         }
 
-        /* Form Input Fields Styling */
+        
         input[type="text"],
         input[type="email"] {
             width: 100%;
@@ -90,7 +90,7 @@
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Focus Effect on Input Fields */
+        
         input[type="text"]:focus,
         input[type="email"]:focus {
             border-color: #4CAF50;
@@ -98,7 +98,7 @@
             box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
         }
 
-        /* Button Styling */
+        //Button Styling 
         .button {
             padding: 12px;
             background-color: #4CAF50;
@@ -112,7 +112,7 @@
             margin-top: 10px;
         }
 
-        /* Hover and Active States for Buttons */
+        
         .button:hover {
             background-color: #45a049;
             transform: scale(1.05);
@@ -122,7 +122,7 @@
             transform: scale(0.95);
         }
 
-        /* Spacing for Buttons */
+        
         .button-container {
             display: flex;
             justify-content: space-between;
