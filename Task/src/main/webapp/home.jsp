@@ -86,7 +86,7 @@
         .action-links a:nth-child(3) { background-color: #f44336; } /* Delete Account */
         .action-links a:nth-child(4) { background-color: #2196F3; } /* Logout */
 
-        /*  Animation */
+        //  Animation 
         .action-links a::after {
             content: "";
             position: absolute;
