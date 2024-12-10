@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
     <style>
-        /* General Reset */
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-        /* Background Image Styling */
+        
         body {
             display: flex;
             flex-direction: column;
@@ -24,7 +24,7 @@
             color: #fff;
             text-align: center;
         }
-        /* Dark Overlay for Background */
+        
         body::before {
             content: "";
             position: absolute;
@@ -35,7 +35,7 @@
             background: rgba(0, 0, 0, 0.6);
             z-index: 1;
         }
-        /* Headline Styling */
+        
         .headline {
             position: relative;
             z-index: 2;
@@ -54,7 +54,7 @@
                 transform: translateY(0);
             }
         }
-        /* Action Links Container */
+        
         .action-links {
             position: relative;
             z-index: 2;
@@ -62,7 +62,7 @@
             gap: 15px;
             margin-top: 20px;
         }
-        /* Action Links Styling */
+        
         .action-links a {
             padding: 12px 24px;
             text-decoration: none;
@@ -80,13 +80,13 @@
             transform: scale(1.05);
             box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
         }
-        /* Color Variations for Each Link */
+    
         .action-links a:nth-child(1) { background-color: #4CAF50; } /* View Profile */
         .action-links a:nth-child(2) { background-color: #ff9800; } /* Update Profile */
         .action-links a:nth-child(3) { background-color: #f44336; } /* Delete Account */
         .action-links a:nth-child(4) { background-color: #2196F3; } /* Logout */
 
-        /* Glowing Effect Animation */
+        /*  Animation */
         .action-links a::after {
             content: "";
             position: absolute;
@@ -101,7 +101,7 @@
         .action-links a:hover::after {
             left: 100%;
         }
-        /* Notification Styling */
+        
         .notification {
             display: none;
             position: fixed;
@@ -128,7 +128,7 @@
         <a href="login.html" onclick="logout(event)">Logout</a>
     </div>
 
-    <!-- Notification Element -->
+    
     <div class="notification" id="notification">You have logged out successfully!</div>
 
     <script>
@@ -148,20 +148,20 @@
 
         // Confirm Delete Function
         function confirmDelete(event) {
-            if (!confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
+            if (!confirm("Are you sure you want to delete your account? ")) {
                 event.preventDefault();
             }
         }
 
         // Logout Function with Notification
         function logout(event) {
-            event.preventDefault(); // Prevents default link behavior for logout
+            event.preventDefault(); // Prevents default link behavior 
             const notification = document.getElementById('notification');
             notification.style.display = 'block';
             setTimeout(() => {
                 notification.style.display = 'none';
                 window.location.href = 'login.html'; // Redirect to login page
-            }, 4000); // Shows the notification for 2 seconds
+            }, 4000); // notification for 2 second
         }
     </script>
 </body>
